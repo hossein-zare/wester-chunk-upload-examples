@@ -96,7 +96,7 @@ const upload = () => {
         const chunk = new Chunk({
             name: 'video', // request name
             size: 4000, // chunk size
-            url: './test.php', // destination
+            url: './upload.php', // destination
         });
 
         chunk.setFile(file);
