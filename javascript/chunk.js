@@ -49,7 +49,7 @@ class Chunk {
                 'x-chunk-size' : this.size,
                 'x-file-name' : this.file.name,
                 'x-file-size' : this.file.size,
-                'x-file-identity' : 9
+                'x-file-identity' : this.identity
             }
         })
             .then(response => {
