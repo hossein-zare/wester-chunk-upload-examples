@@ -63,7 +63,7 @@ class Chunk {
 
                     // asking for the next chunk...
                     case 201:
-                        console.log(`%${response.data.progress} uploaded...`);
+                        console.log(`${response.data.progress}% uploaded...`);
 
                         if (this.start < this.file.size) {
                             this.commit();
