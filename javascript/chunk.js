@@ -74,7 +74,7 @@ class Chunk {
             .catch(error => {
                 if (error.response) {
                     if (this.codes.includes(error.response.status)) {
-                        console.danger(error.response.status, 'Failed to upload the chunk.')
+                        console.warn(error.response.status, 'Failed to upload the chunk.')
                     } else if (error.response.status === 422) {
                         console.warn('Validation Error', error.response.data);
                     } else {
